@@ -22,7 +22,12 @@ class EncodeTest extends \PHPUnit_Framework_TestCase
             ->encoder([['name' => 'example']])
             ->depth(1)
             ->encode();
-        $this->assertFalse($actual);
+        if (version_compare(PHP_VERSION, '5.5.0') >= 0) {
+            // PHP 5.5 over
+            $this->assertFalse($actual);
+        } else {
+            $this->assertNotNull($actual);
+        }
     }
 
     /**
