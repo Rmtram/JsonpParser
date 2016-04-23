@@ -7,6 +7,12 @@ Version](https://poser.pugx.org/rmtram/jsonp-parser/v/stable.png)](https://packa
 # JsonpPaser
 The processing of JSONP decoding and encoding.
 
+# Install
+
+```
+composer require rmtram/jsonp-parser
+```
+
 # Usage
 
 ### Encoder
