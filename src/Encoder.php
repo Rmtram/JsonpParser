@@ -54,7 +54,11 @@ class Encoder
     public function encode()
     {
         if (!$this->prohibit()) {
-            $json = json_encode($this->value, $this->option, $this->depth);
+            if (version_compare(PHP_VERSION, '5.5.0', '<')) {
+                $json = json_encode($this->value, $this->option);
+            } else {
+                $json = json_encode($this->value, $this->option, $this->depth);
+            }
             if (false === $json) {
                 return false;
             }

@@ -36,7 +36,8 @@ string(28) "example({"name":"example"})"
 ---
 
 - depth(default 512)
-
+* PHP 5.5 and over
+* PHP Version 5.4 can not be used
 ```php
 $parser = new Rmtram\JsonpParser\Jsonp();
 $parser
@@ -278,6 +279,13 @@ $parser->is('callback(example)', false, true);
 ```php
 false
 ```
+
+# Support Version
+- PHP 5.4
+- PHP 5.5
+- PHP 5.6
+- PHP 7
+- HHVM
 
 ### LICENSE
 
