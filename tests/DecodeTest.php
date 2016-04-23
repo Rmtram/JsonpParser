@@ -46,13 +46,11 @@ class DecodeTest extends \PHPUnit_Framework_TestCase
     {
         $jsonp = new Jsonp();
         $mock = $this->mock('multiple');
-        $actual = $jsonp->decoder($mock)->depth(1)->toObject();
-        if (version_compare(PHP_VERSION, '5.5.0') >= 0) {
-            // PHP 5.5 over
-            $this->assertNull($actual);
-        } else {
-            $this->assertNotNull($actual);
-        }
+        $actual = $jsonp
+            ->decoder($mock)
+            ->depth(1)
+            ->toObject();
+        $this->assertNull($actual);
     }
 
     /**
