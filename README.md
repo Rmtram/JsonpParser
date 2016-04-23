@@ -1,3 +1,9 @@
+[![Build Status](https://travis-ci.org/Rmtram/JsonpParser.svg)](https://travis-ci.org/Rmtram/JsonpParser)
+[![Total
+Downloads](https://poser.pugx.org/rmtram/jsonp-parser/downloads)](https://packagist.org/packages/rmtram/jsonp-parser)
+[![Latest Stable
+Version](https://poser.pugx.org/rmtram/jsonp-parser/v/stable.png)](https://packagist.org/packages/rmtram/jsonp-parser)
+
 # JsonpPaser
 The processing of JSONP decoding and encoding.
 
